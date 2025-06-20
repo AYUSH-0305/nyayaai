@@ -91,8 +91,8 @@ Visit the UI at: `http://localhost:3000`
 
 ## 🌐 Deployment
 
-- Frontend deployed on **Vercel**: [https://nyayaai.vercel.app](https://nyayaai.vercel.app)
-- Backend deployed on **Render**: [https://nyayaai-api.onrender.com](https://nyayaai-api.onrender.com)
+- Frontend deployed on **Vercel**: [https://nyayaai.vercel.app](https://nyayaai.vercel.app/)
+- Backend deployed on **Render**: [https://nyayaai-api.onrender.com](https://nyayaai-backend.onrender.com)
 
 Ensure frontend uses:
 ```env
