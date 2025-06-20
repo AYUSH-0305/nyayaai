@@ -5,7 +5,7 @@ const RAGInteraction = ({ file }) => {
   const [answer, setAnswer] = useState("");
 
   const handleAsk = async () => {
-    const res = await fetch("http://localhost:5000/api/rag", {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/rag`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question, document: file.content }),

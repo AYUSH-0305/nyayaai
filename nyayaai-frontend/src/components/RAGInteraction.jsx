@@ -11,7 +11,7 @@ const RAGInteraction = ({ context }) => {
     setTyping(true);
     setAnswer("");
 
-    const res = await fetch("http://localhost:5000/api/rag/ask", {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/rag/ask`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ context, question }),

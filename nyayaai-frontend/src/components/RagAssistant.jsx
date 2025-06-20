@@ -21,7 +21,7 @@ const RagAssistant = () => {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:5000/api/rag/upload", {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/rag/upload`, {
         method: "POST",
         body: formData,
       });
@@ -44,7 +44,7 @@ const RagAssistant = () => {
     setAnswer("");
     setIsTyping(true);
     try {
-      const res = await fetch("http://localhost:5000/api/rag/ask", {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/rag/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
