@@ -1,0 +1,64 @@
+.rag-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #e0e0e0;
+}
+
+.rag-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rag-container input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.rag-container button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: #0057b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rag-container button:hover {
+  background-color: #003f8a;
+}
+
+.question-box {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.question-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.typing {
+  font-style: italic;
+  color: gray;
+  margin-top: 10px;
+}
+
+.answer {
+  margin-top: 15px;
+  background: #e9f7ef;
+  padding: 12px;
+  border-left: 4px solid #2e7d32;
+  border-radius: 5px;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
